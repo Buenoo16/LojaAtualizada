@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #104A80;
+}
+
+h1 {
+  text-align: center;
+  color:#104A80;
+  margin-bottom: 1%;
+}
+
+.form-container form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 1, 0.1);
+  border: solid 1px #104A80;
+}
+
+/* Estilos para os campos de entrada */
+.form-container label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  color: #104A80;
+  
+}
+
+.form-container input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: 95%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: solid 1px #104A80;
+}
+
+/* Estilos para o botão de envio */
+.form-container input[type="submit"] {
+  background-color:#104A80;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #555;
+}

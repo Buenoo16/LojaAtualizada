@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu pedido</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+ *{
+    
+    padding: 0;
+    font-size: 20px;
+      font-family: 'Assistant', sans-serif;
+      
+      margin: 0;
+      
+    
+  }
+  .pai-pedido{
+    width: 80%;
+   
+    border-radius: 5px;
+    margin-left: 190px;
+    margin-top: 30px;
+  
+  box-shadow: 8px 5px 35px rgba(0, 0, 0, 0.6);
+ 
+  }
+  .loja-header {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #104A80;
+  width: 100%;
+  box-shadow: 4px 11px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: solid 2px #d4af37;
+  height: 50px;;
+}
+
+.logo img {
+  width: 100px; 
+}
+
+.search-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.search-box input[type="search"] {
+  width: 300px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #F5F9F8;
+  box-shadow: 4px 11px 10px rgba(0, 0, 0, 0.7);
+  border: solid 2px #d4af37;
+  
+  
+  
+}
+
+.search-box button {
+  padding: 10px 20px;
+  background-color: #F5F9F8;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  margin-left: 10px;
+  color: black;
+  transition: background-color 0.5s ease;
+  box-shadow: 4px 11px 10px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+.search-box button:hover {
+background-color: #d4af37; 
+  color: #0F4C83;
+  transform: scale(1.2);
+
+
+
+}
+
+
+.perfil img {
+  width: 50px;
+  margin-left: 15px; 
+  margin-right: 20px;
+}
+  .pedido-fim{
+    justify-content: flex-start;
+    text-align:initial;
+    color: #0F4C83;
+    
+    
+  }
+  .pedido-fim {
+    
+   
+    color: #0F4C83;
+  }
+  
+  .endereco h3{
+    border-bottom: 2px solid #d4af37;
+    color: #0F4C83;
+
+    
+}
+h1{
+    margin-top: 20px;
+    margin-left: 34px;
+    color: white;
+    background-color: #0F4C83;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 13px;
+}
+
+.cupom h3{
+    border-bottom: 2px solid #d4af37;
+    color: #0F4C83;
+
+}
+.descricao{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 38px;
+    
+
+}
+.produto1{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dotted #d4af37;
+    
+
+}
+.produto1 p{
+    margin-right: 30px;
+
+}
+p, h3{
+    margin-left: 10px;
+}
+.desc p{
+    font-size: 15px;
+}
+.cupom-input {
+      border-radius: 10px;
+      padding: 5px;
+      font-size: 16px;
+      width: 200px;
+      margin-left: 10px;
+      margin-top: 15px;
+    }
+    
+    .cupom-button {
+      padding: 10px 20px;
+      background-color: #d4af37;
+      color: #0F4C83;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 10px;
+      padding: 6px;
+      margin-left: 10px;
+    }
+    
+    .cupom-button:hover {
+      background-color: #23527c;
+    }
+
+    footer {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 0;
+  margin-top: 130px;
+  
+}
+
+footer .main {
+
+  width: 100%;
+  height: 200px;
+  background-color: #104A80;
+  padding: 20px 10px;
+  border-radius: 3px;
+  padding-right: 35px;
+  border: solid 1px #658ec6;
+}
+
+.footer-links {
+  padding-right: 35px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.footer-company,
+.link-uteis,
+.footer-contact,
+.rede-social {
+  color: white;
+  height: 100%;
+  
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  margin-bottom: 8px;
+}
+
+.main .rede-social img {
+  width: 32px;
+  height: 32px;
+}
+
+footer .inferior {
+  width: 100%;
+  height: 50px;
+  background-color: #104A80;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 44px;
+}
+  h6 a {
+      color:white;
+  }
+
+
+  .rodape-inferior {
+    background-color: #0f4c83;
+  border: solid 1px #658ec6;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    color: #fff;
+    
+    
+  }
+  
+  .formas-pagamento {
+    margin-top: 20px; 
+    
+  }
+
+  
+  ul.lista-pagamento {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display:inline-block;
+    margin: 0 10px;
+  }
+  
+  .lista-pagamento img {
+    max-height: 40px;
+    max-width: 100px;
+    color: #F5F9F8;
+  }
+  .certificados {
+    
+    text-align: right;
+    margin-left: 1000px; 
+    
+    
+    
+    
+  }
+  
+  .certificados h3 {
+    margin-top: 40px;
+    color: #fff;
+    
+    
+    
+  }
+  
+  .imagens-certificados img {
+    
+    margin-bottom: 10px;
+    max-width: 200px; 
+    
+  }
+  button.continuar {
+        background-color: #4CAF5;
+        color: white;
+        padding: 10px 20px; 
+        font-size: 30px; 
+        border: none;
+        cursor: pointer; 
+        background-color: #23527c;
+        border-radius: 2px;
+    }
+    .continuar {
+    width: 100%;
+    display:flex;
+   margin-top: 15px;
+    justify-content: center;
+    }
+    .continue a{
+        text-decoration: none;
+    }
+    
+    
+
+</style>
+</head>
+<body>
+    <header class="loja-header">
+        <div class="logo">
+          <a href="index.html"><img src="https://i.ibb.co/GCM8wL8/In-Shot-20230612-200007941.png"  alt="Logo"></a>
+        </div>
+        <form action="">
+        <div class="search-box">
+          <input type="search" placeholder="Pesquisar produtos">
+          <button class="pesquisar-prod">
+              <img src="https://i.ibb.co/wpx37X5/lupa.png" alt="lupa" >
+          </button>
+        </div>
+      </form>
+        <div class="perfil">
+                  <a href="carrinho.html"><img src="https://i.ibb.co/vzM7zQ0/icons8-shopping-bag-50.png" alt="shopping-cart"></a>
+                  
+                  <a href="login.html"><img src="https://i.ibb.co/tLT6RLs/icons8-user-50.png" alt="user" ></a>
+        </div>
+      </header>
+    <h1>Meu pedido</h1>
+    <div class="pai-pedido">
+        
+    <div class="pedido-fim">
+        
+        <br>
+        <div class="descricao"><h3>Descrição do produto</h3>
+        <h3>Preço</h3>
+        
+        </div>
+        <hr>
+
+        <br>
+        <div class="produto1">
+        <p>Frank Ocean - Blonde</p>
+        <p>R$467,00</p>
+        </div>
+        <br>
+        <div class="produto1">
+        <p>Tyler, the Creator - Flower Boy</p>
+        <p>R$267,00</p>
+        </div>
+        <br>
+        <div class="produto1">
+        <p>Kanye West - Graduation</p>
+        <p>R$509,00</p>
+         </div>
+
+    </div>
+    <br>
+    
+    <div class="endereco">
+        <h3>Endereço de entrega</h3>
+    </div>
+    <form>
+        
+    <div class="desc">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laudantium dolorum, fugiat sapiente ipsum ratione numquam illum, cum obcaecati, saepe vero in consectetur recusandae ab ipsa! Repellendus laboriosam ipsa tenetur!</p>
+        <br>
+        <a href="#"><p>Alterar endereco de entrega</p></a>
+    </div>
+    <br>
+
+    <div class="cupom">
+        <h3>Possui cupom de desconto? </h3>
+        
+    </div>
+    <div class="insert-cupom">
+        <form>
+        <input type="text" id="cupom-input" class="cupom-input" placeholder="Digite o cupom">
+  <button id="cupom-button" class="cupom-button">Aplicar</button>
+    </form>
+
+    </div>
+    <div class="continue">
+    <a href="resumo-pedido.html">
+    <button type="continuar" class="continuar">Continuar pedido</button></a></div>
+    <br>
+
+    </div>
+    <footer>
+        <div class="rodape-inferior">
+            <div class="formas-pagamento">
+              <h3>Formas de Pagamento</h3>
+              <ul class="lista-pagamento">
+                <li><img src="footer/cartoes/amazon.png" alt="Forma de pagamento "></li>
+                <li><img src="footer/cartoes/americanexpress.png" alt="Forma de pagamento "></li>
+                <li><img src="footer/cartoes/delta.png" alt="Forma de pagamento "></li>
+                <li><img src="footer/cartoes/discover.png" alt="Forma de pagamento "></li>
+                <li><img src="footer/cartoes/ebay.png" alt="Forma de pagamento "></li>
+                
+                
+              </ul>
+              <ul class="lista-pagamento">
+                <li><img src="footer/cartoes/mastercard.png" alt="Forma de pagamento "></li>
+                <li><img src="footer/cartoes/paypal.png" alt="Forma de pagamento "></li>
+                <li><img src="footer/cartoes/solo.png" alt="Forma de pagamento "></li>
+                
+                <li><img src="footer/cartoes/visa.png" alt="Forma de pagamento "></li>
+                
+              </ul>
+            </div>
+            <div class="certificados">
+                <h3>Certificados de Segurança</h3>
+                <div class="imagens-certificados">
+                  <img src="footer/selos/reclame_aqui.jpg" alt="Certificado 1">
+                  <img src="footer/selos/safebrowser.png" alt="Certificado 2">
+                  <img src="footer/selos/seal.png" alt="Certificado 3">
+                </div>
+              </div>
+              
+            </div>
+        <div class="main">
+        <div class="content footer-links">
+          <div class="footer-company">
+            <h4>Conteúdo</h4>
+            <h6><a href="sobre-nós.html">Sobre nós</a></h6>
+            <h6><a href="contato.html">Fale conosco</a></h6>
+
+          </div>
+          <div class="link-uteis">
+            <h4>Links Úteis</h4>
+            <h6><a href="link-util-1.html">Link útil<a><h6>
+<h6><a href="link-util-2.html">Link útil</a></h6>
+<h6><a href="ajuda.html">Ajuda</a></h6>
+
+          </div>
+          <div class="rede-social">
+            <h4>Redes sociais</h4>
+            <div class="social-icons">
+              <img src="https://i.ibb.co/FxNqpMG/icons8-instagram-50.png" alt="Instagram" />
+              <a href="#"><img src="https://i.ibb.co/qYVkHS3/icons8-facebook-50.png" alt="facebook" border="0"></a>
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co/V2VnJHL/icons8-tiktok-50.png" alt="tiktok" border="0"></a>
+              <a href="https://imgbb.com/"><img src="https://i.ibb.co/DC3507H/icons8-twitter-50.png" alt="icons8-twitter-50" border="0"></a>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <h4>Nossos contatos</h4>
+            <h6><a href="tel:+5515981234627">+55 15981234627</a></h6>
+<h6><a href="mailto:bueno.mateus@aluno.ifsp.edu.br">bueno.mateus@aluno.ifsp.edu.br</a></h6>
+<h6><a href="https://maps.google.com/?q=Itapetininga%20-%20SP">Itapetininga - SP</a></h6>
+
+          </div>
+        </div>
+      </div>
+      <div class="inferior">Mateus Bueno - IT3023508 ©
+      </div>
+      
+    </footer>
+    
+</body>
+</html>

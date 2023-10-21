@@ -1,0 +1,133 @@
+*{
+    
+    padding: 0;
+    font-size: 20px;
+      font-family: 'Assistant', sans-serif;
+      color: white;
+      margin: 0;
+      
+    
+  }
+  .editar-button{
+    margin-left: 5px;
+    width: 100px;
+    border:solid 1px black;
+  }
+  .prod-editar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    margin: 10px ;
+    padding: 10px;
+    width: 100%;
+}
+.prod-editar h3{
+  margin-left: 1px;
+}
+
+.prod-editar img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.produt-text {
+    
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+}
+
+.botao-fim {
+    display: flex;
+    padding-left: 12px;
+    align-items:normal;
+    margin: 2px;
+    padding: 10px;
+    right: 10px;
+    top: 0;
+    margin-left: 10px;
+}
+.flex-container{
+    width: 97%;
+}
+.editar-button, .remover-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.editar-button:hover, .remover-button:hover {
+    background-color: #2980b9;
+}
+
+h3,p{
+  color: #0f4c83;
+
+width: 411px;
+}
+.classe-h3{
+  justify-content: flex-start;
+}
+.titulo{
+  color: #0f4c83;
+
+  font-size: 22px;
+}
+.topoTab{
+  display: flex;
+  justify-content: space-around;
+}
+.topoTab a{
+  border-radius: 5px;
+  background-color: goldenrod;
+  
+}
+.tabelaProd{
+  display:flex;
+    
+  justify-content: space-between;
+  width: 80%;
+}
+.tabelaProd h2{
+  color: #0f4c83;
+  margin-left: 15px;
+  font-size: 30px;
+}
+.categoria {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #658EC6;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 4px 11px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-top: 18px;
+  background-image: linear-gradient(#104A80, #316BBF #5597ffee)
+  
+  }
+  
+.categoria h2 a {
+
+    color: white;
+    
+    text-decoration: none;
+  text-shadow: 2px 4px 2px black;
+  transition: background-color 0.6s ease;
+  padding: 10px;
+  font-size: 30px;
+  
+  
+  
+
+    }
+    
+    .categoria h2 a:hover{
+       color: #d4af37; 
+  
+    }
