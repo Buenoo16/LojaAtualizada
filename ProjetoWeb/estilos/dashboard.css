@@ -1,0 +1,131 @@
+*{
+    
+    padding: 0;
+    font-size: 20px;
+      font-family: 'Assistant', sans-serif;
+      color: white;
+      margin: 0;
+      
+    
+  }
+   a{
+    text-decoration: none;
+  }
+
+  .prod-editar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+}
+.prod-editar h3{
+  margin-left: 1px;
+}
+
+.prod-editar img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.produt-text {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botao-fim {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+.editar-button, .remover-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.editar-button:hover, .remover-button:hover {
+    background-color: #2980b9;
+}
+
+h3,p{
+  color: #0f4c83;
+
+width: 100px;
+}
+.classe-h3{
+  justify-content: flex-start;
+}
+.titulo{
+  color: #0f4c83;
+
+  font-size: 30px;
+}
+.topoTab{
+  display: flex;
+  justify-content: space-around;
+}
+.topoTab a{
+  border-radius: 5px;
+  background-color: goldenrod;
+  
+}
+.tabelaProd{
+  display:flex;
+  margin-left: 7px;
+  justify-content: space-between;
+  width: 83%;
+}
+.tabelaProd h2{
+  color: #0f4c83;
+  margin-left: 15px;
+  font-size: 30px;
+}
+.categoria {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #658EC6;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 4px 11px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-top: 18px;
+  background-image: linear-gradient(#104A80, #316BBF #5597ffee)
+  
+  }
+  
+.categoria h2 a {
+
+    color: white;
+    
+    text-decoration: none;
+  text-shadow: 2px 4px 2px black;
+  transition: background-color 0.6s ease;
+  padding: 10px;
+  font-size: 30px;
+  
+  
+  
+
+    }
+    
+    .categoria h2 a:hover{
+       color: #d4af37; 
+  
+    }
+    .flex-container{
+      width: 95%;
+    }
+    img{
+    border: solid 1px #104A80;
+    border-radius: 9px;
+    }

@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  font-size: 20px;
+  font-family: 'Assistant', sans-serif;
+  margin: 0;
+}
+
+.categoria {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #658EC6;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 4px 11px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-top: 1%;
+  background-image: linear-gradient(#104A80, #316BBF, #5597ffee);
+}
+
+.categoria h2 a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 4px 2px black;
+  transition: background-color 0.6s ease;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.categoria h2 a:hover {
+  color: #d4af37;
+}
+
+.img-main {
+  width: 100%;
+  height: 450px;
+  border: solid 1px black;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 3%;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/597febe6725e2529bad5fc50/1519097269628-SEB6IIHM7LERQJO1Y5SM/pitchfork+tv+small.gif?format=1000w");
+  background-size: cover;
+  box-shadow: 8px 5px 35px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  transition: background-image 0.8s ease;
+  background-position: center;
+}
+
+.img-main:hover {
+  background-image: url("https://i.pinimg.com/originals/66/b8/6a/66b86aef45fcfa6234239e54f4b06c0a.gif");
+  background-size: 42%;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  padding: 50px;
+}
+
+.item {
+  text-align: center;
+  color: black;
+  background-color: white;
+  height: 575px;
+  margin: 30px;
+  width: 320px;
+  margin-bottom: 5px;
+  border-radius: 19px;
+  box-shadow: 8px 5px 35px rgba(0, 0, 0, 0.8);
+  border: solid 0.5px black;
+}
+
+.item h2 a {
+  color: #104A80;
+  font-size: 24px;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px white;
+  transition: background-color 0.5s ease;
+}
+
+.item h2 a:hover {
+  color: #d4af37;
+  text-shadow: 1px 1px 3px black;
+}
+
+.item h2 a,
+p {
+  margin: 10px 0;
+}
+
+.item h3 {
+  font-size: 23px;
+  font-family: Arial, sans-serif;
+  text-shadow: 1px 1px 2px gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.item p {
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.comprar-botao {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #104A80;
+  color: #fff;
+  border: solid 2px #d4af37;
+  cursor: pointer;
+  box-shadow: 2px 8px 7px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.7s ease;
+  margin-right: 7px;
+  transform: scale(1);
+  transition: transform 0.6s ease;
+}
+
+.comprar-botao:hover {
+  background-color: #d4af37;
+  color: #0F4C83;
+  transform: scale(1.2);
+}
+
+.produtos-loja {
+  width: 90%;
+  border-radius: 16px;
+  margin-top: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  border: solid 0.5px black;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.produtos-loja:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .item {
+      width: auto; /* Alterado de '90%' para 'auto' */
+      margin: auto; /* Adicionado para centralizar o item */
+  }
+}

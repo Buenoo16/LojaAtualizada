@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%; /* A imagem agora se ajustará ao tamanho do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+nav {
+    background-color: #104A80;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinhar o conteúdo verticalmente */
+    padding: 1%;
+    box-shadow: 4px 11px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1%;
+}
+
+.logo {
+    width: 10%;
+    height: 90%;
+}
+
+.form-class form {
+    height: 10%;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-class input[type="search"] {
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 70%;
+    font-size: 16px;
+}
+
+.form-class button[type="submit"] {
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.perfil {
+    display: flex;
+    justify-content: space-between;
+}
+a img {
+    text-decoration: none;
+}
+
+
+
+/* Adicione mais estilos conforme necessário */
+
+/* Estilos específicos para telas menores (exemplo: largura máxima de 900px) */
+@media (max-width: 900px) {
+    img {
+        max-width: 90%;
+    }
+
+    .logo {
+        width: 20%;
+        height: 70%;
+    }
+
+    form {
+        width: 50%;
+    }
+}
